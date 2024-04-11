@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> 
 
 <head>
   <meta charset="utf-8" />
@@ -20,9 +20,9 @@
 
 
   <div id="ramen-detail">
-    <img class="detail-image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
-    <h2 class="name">Insert Name Here</h2>
-    <h3 class="restaurant">Insert Restaurant Here</h3>
+    <img id='selected-ramen-picture' class="detail-image" src="./assets/image-placeholder.jpg" alt="Insert Name Here" />
+    <h2 id='selected-ramen-name' class="name">Insert Name Here</h2>
+    <h3 id='selected-ramen-restaurant' class="restaurant">Insert Restaurant Here</h3>
   </div>
 
   <h3>Rating:</h3>
@@ -38,15 +38,15 @@
   <form id="new-ramen">
     <h4>Add New Ramen</h4>
     <label for="new-name">Name: </label>
-    <input type="text" name="name" id="new-name" />
+    <input class="clear" type="text" name="name" id="new-name" required/>
     <label for="new-restaurant">Restaurant: </label>
-    <input type="text" name="restaurant" id="new-restaurant" />
+    <input class="clear" type="text" name="restaurant" id="new-restaurant" required/>
     <label for="new-image">Image: </label>
-    <input type="text" name="image" id="new-image" />
+    <input class="clear" type="text" name="image" id="new-image" required/>
     <label for="new-rating">Rating: </label>
-    <input type="number" name="rating" id="new-rating" />
+    <input class="clear" type="number" name="rating" id="new-rating" required/>
     <label for="new-comment">Comment: </label>
-    <textarea name="new-comment" name="new-comment" id="new-comment"></textarea>
+    <textarea class="clear"name="newcomment" id="new-comment" required></textarea>
     <input type="submit" id='submit-button' value="Create" />
   </form>
 
